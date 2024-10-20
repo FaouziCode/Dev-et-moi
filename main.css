@@ -5,12 +5,13 @@
 body{
     display: flex;
     justify-content: center;
-    font-family: 'roboto';
+    font-family: 'roboto', sans-serif;
     font-size: 1.2rem;
 }
 
 #mainContainer{
     max-width: 1400px;
+    width: 100%;
 }
 
 /*border color*/
@@ -59,30 +60,38 @@ header{
 
 /*baniere*/
 .baniereContainer{
-    height: 500px;
+    position: relative;
+    height: 450px;
     margin-bottom: 2rem;
 }
 
-.baniere{
-    width: 100%;
-    height: 500px;
+.baniereContainer img{
     object-fit: cover;
-    margin-bottom: -1rem;
+}
+
+.baniere{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.bC{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
 .baniere__logo{
     width: 250px;
-    position: relative;
-    left: 40%;
-    bottom: 380px
 }
 
 .baniere__titre{
     color: white;
-    position: relative;
-    bottom: 380px;
     font-size: 2.5rem;
-    text-align: center;
 }
 
 /*Main presentation*/
@@ -96,12 +105,13 @@ header{
     text-align: center;
     font-size: 1.5rem;
     line-height: 2rem;
+    max-width: 900px;
 }
 
 .containerPresentation{
-    width: 80%;
     display: flex;
     align-items: center;
+    max-width: 900px;
 }
 
 .presentation__art{
