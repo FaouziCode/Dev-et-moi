@@ -58,16 +58,22 @@ header{
 }
 
 /*baniere*/
+.baniereContainer{
+    height: 500px;
+    margin-bottom: 2rem;
+}
+
 .baniere{
     width: 100%;
     height: 500px;
     object-fit: cover;
+    margin-bottom: -1rem;
 }
 
 .baniere__logo{
-    width: 300px;
+    width: 250px;
     position: relative;
-    left: 37%;
+    left: 40%;
     bottom: 380px
 }
 
@@ -79,6 +85,85 @@ header{
     text-align: center;
 }
 
-.baniereContainer{
-    margin-bottom: 1rem;
+/*Main presentation*/
+.presentation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.presentation__texte{
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.containerPresentation{
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.presentation__art{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.artText{
+    font-size: 1rem;
+    text-align: center;
+    width: 90%
+}
+
+.illustrations{
+    width: 50%;
+}
+
+.review__auteur{
+    text-align: center;
+}
+
+/*footer*/
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #5b359d;
+    color: white;
+}
+
+.containerSocialMedia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.2rem;
+}
+
+.location{
+    color: white;
+    font-size: 1rem;
+}
+
+.fa-brands{
+    font-size: 2rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    color: whitesmoke;
+}
+
+.containerNav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.liste h3{
+    color:lightgray;
+}
+
+.lCoordonnees{
+    list-style-type: none;
 }
